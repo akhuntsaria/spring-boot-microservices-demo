@@ -1,4 +1,4 @@
-package com.github.akhuntsaria.moveieservice;
+package com.github.akhuntsaria.movieservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
