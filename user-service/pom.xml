@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.github.akhuntsaria</groupId>
-	<artifactId>review-service</artifactId>
+	<artifactId>user-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Review Service</name>
-	<description>Review service for Spring Boot microservices demo</description>
+	<name>User Service</name>
+	<description>User service for Spring Boot microservices demo</description>
 
 	<properties>
 		<java.version>14</java.version>
