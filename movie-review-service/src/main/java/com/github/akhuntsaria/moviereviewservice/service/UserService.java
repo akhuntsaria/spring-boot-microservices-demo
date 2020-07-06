@@ -11,12 +11,17 @@ public class UserService {
 
     private static final Logger log = LoggerFactory.getLogger(UserService.class);
 
-    private static final String USERS_API = "http://localhost:8082/api/v1/users";
+    private static final String USERS_API = "http://user-service/api/v1/users";
+
+    private final RestTemplate restTemplate;
+
+    public UserService(RestTemplate restTemplate) {
+        this.restTemplate = restTemplate;
+    }
 
     public UserDto getUserDto(Long userId) {
         String url = USERS_API + "/" + userId;
 
-        RestTemplate restTemplate = new RestTemplate();
         UserDto userDto = restTemplate.getForObject(url, UserDto.class);
 
         log.debug("Fetched user with id " + userId + ": " + userDto);
